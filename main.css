@@ -11,21 +11,18 @@
 	text-align: center;
 	padding-bottom: 30px;
 	padding-top: 30px;
-	
+
 }
 
 .pic img {
 
 	width: 475px;
-	height: 95px;	
+	height: 95px;
 
 }
 
-.card{
-	width: 99%;
-	padding-left: 20px;
+.color{
 
-
-
+	color:#ee6e73;
 
 }
