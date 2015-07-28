@@ -23,10 +23,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
-
-		<!--This is the login at the top-->
-		<div class = "login">
-			<p> <a href = "https://accounts.google.com/Login?hl=EN">Login</a> to your Google Account</p>
+		<div class="header">
+			<!--This is the login at the top-->
+			<div class = "login">
+				<p class = "header_text"> <a class = "link" href = "https://accounts.google.com/Login?hl=EN">Login</a> to your Google Account</p>
+			</div>
 		</div>
 
 		<!--This is the logo-->
@@ -40,90 +41,189 @@
 			<div class="row">
 			    <div class="col s12 m4 l8">
 			      <ul class="tabs">
-			        <li class="tab col s3"><a href="#test1">Scavenger Hunts</a></li>
-			        <li class="tab col s3"><a class="active" href="#test2">Unanswered Quests</a></li>
-			        <li class="tab col s3"><a href="#test3">How to Quest?</a></li>
-			        <li class="tab col s3"><a href="#test4">Post Quests</a></li>
+			        <li class="tab col s3"><a href="#scav">Scavenger Hunts</a></li>
+			        <li class="tab col s3"><a href="#post">Post Quests</a></li>
+							<li class="tab col s3"><a href="#howto">How to Quest?</a></li>
 			      </ul>
 			  	</div>
 			</div>
+
+			<div id="scav" class="col s12">
+				<div class="row">
+					<div class="col s12 m4 l2"><p></p></div>
+					<div class="col s12 m4 l8"><span class="flow-text">
+						<ul class="collapsible" data-collapsible="accordion">
+							<li class>
+							 <div class="collapsible-header"><h4 class="color">The Super Historical Quest</h4></div>
+							</li>
+							<li class>
+							 <div class="collapsible-header">1. Start Quest here: <a href="http://www.theplatform.net/wp-content/uploads/2015/07/top500results.jpg" target="_blank" class="color"> Super Computer Chart</a></div>
+							<div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Find the only supercomputer with a name that could be an action(verb).</p></div>
+						 </li>
+						 <li class>
+							<div class="collapsible-header">2. Search the action on <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank" class="color"> Wikipedia</a></div>
+							<div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Locate the coordinates of the event with 96 people involved.</p></div>
+						 </li>
+						 <li class>
+							<div class="collapsible-header">3. Place the coordinates in <a href="https://www.google.com/maps/" target="_blank" class="color"> Google Maps.</a></div>
+							<div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Find the nearby street named after a historical figure.</p></div>
+						</li>
+						<li class>
+						 <div class="collapsible-header">4. Find his page on <a href="http://www.biography.com/" target="_blank" class="color"> biography.com</a></div>
+						 <div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Scan through the headers and you are almost there! Just enter the breed of dog, and you will have completed the Quest.</p></div>
+					 </li>
+					 <li class>
+						<div class="collapsible-header"><h5>Answer:</h5></div>
+						<div class="collapsible-body card-panel red lighten-5" style="display: none;">
+							<div class="row">
+							 <div class="input-field col s6">
+								 <input id="answer" type="text" class="validate">
+							 </div>
+						 </div>
+					 </div>
+					 </li>
+					</ul>
+				</div>
+				<div class="col s12 m4 l2"><p></p></div>
+			</div>
+			<!--End of collapsable.-->
+
+			<!--This is the travel collapsable-->
+			<div class="row">
+				<div class="col s12 m4 l2"><p></p></div>
+				<div class="col s12 m4 l8"><span class="flow-text">
+					<ul class="collapsible" data-collapsible="accordion">
+						<li class>
+						 <div class="collapsible-header"><h4 class="color">The World Travel Quest</h4></div>
+						</li>
+						<li class>
+						 <div class="collapsible-header">1. Start Quest here: <a href="https://www.google.com/maps/place/Aquatic+Park/@37.808574,-122.409625,3a,41.4y,210.71h,92.42t/data=!3m8!1e1!3m6!1sXlc7lukJCeYAAAQqpo5Ogw!2e0!3e11!6s%2F%2Fgeo0.ggpht.com%2Fcbk%3Fpanoid%3DXlc7lukJCeYAAAQqpo5Ogw%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D100%26h%3D80%26yaw%3D316.23077%26pitch%3D0!7i7000!8i3500!4m2!3m1!1s0x0000000000000000:0xa37d0e615fe3778a!6m1!1e1" target="_blank" class="color"> Google Street View</a></div>
+						<div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Locate the name of the bus company displayed on an informational booth.</p></div>
+					 </li>
+					 <li class>
+						<div class="collapsible-header">2. Search for the company's website on <a href="https://www.google.com/" target="_blank" class="color">Google</a></div>
+						<div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Go to the page for the city that has a flower in its country's flag. On the city's frontpage, find the location of the tour stop that is named after a British Queen.</p></div>
+					 </li>
+					 <li class>
+						<div class="collapsible-header">3. Find this location on <a href="https://www.google.com/maps/" target="_blank" class="color"> Google Maps.</a></div>
+						<div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Scroll through the photos that are pinned at this location. To finish this Quest, place the name of the coffee shop present in one of these photos into the answer box.</p></div>
+					</li>
+				 <li class>
+					<div class="collapsible-header"><h5>Answer:</h5></div>
+					<div class="collapsible-body card-panel red lighten-5" style="display: none;">
+						<div class="row">
+						 <div class="input-field col s6">
+							 <input id="answer" type="text" class="validate">
+						 </div>
+					 </div>
+				 </div>
+				 </li>
+				</ul>
+			</div>
+			<div class="col s12 m4 l2"><p></p></div>
+		</div>
+
+
+
+
+
+
+	</div>
+
+		<!-- Post page -->
+			<div id="post" class="col s12">
+
+				<!--The form starts here-->
+				<div class="row">
+				 <form class="col s12">
+					 <!--This is the Quest Tiltle-->
+					 <div class="row">
+						 <div class="col s12 m4 l2"><p></p></div>
+						 <div class="input-field col s12 m4 l8">
+							 <input id="quest_title" type="text" class="validate">
+							 <label class="red-text" for="quest_title">Quest Title</label>
+						 </div>
+							<div class="col s12 m4 l2"><p></p></div>
+					 </div>
+					 <!--This is the Card with a step-->
+					 <div class="row">
+							<div class="col s12 m4 l2"><p></p></div>
+							<div class="col s12 m4 l8">
+								<div class="card-panel white">
+								 <p>Step 1</p>
+									<div class="row">
+										<div class="input-field col s6">
+											<input id="step_title" type="text" class="validate-red">
+											<label class="red-text" for="quest_link">Enter Step Title</label>
+										</div>
+										<div class="input-field col s6">
+											<input id="step_link" type="text" class="validate-red">
+											<label class="red-text" for="quest_link">Enter Step Link</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="quest_instructions" type="text" class="validate">
+											<label class="red-text" for="quest_instructions">Enter Instruction for the Quest Link</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col s12 m4 l2"><p></p></div>
+					 </div>
+					 <!--End of Card-->
+
+	 					 <!--End of Card-->
+					 <!--The buttons-->
+					 <div class="row">
+						 <!--Card Button-->
+						 <div class="col s12 m4 l2"><p></p></div>
+						 <a class="waves-effect waves-light btn red" onclick="addCard();">Add Step</a>
+						 <!--Submit Button-->
+						 <input class="wavs-effect waves-light btn red" type="submit" value="Submit">
+					 </div>
+					 <!--End of Button-->
+
+				 </form>
+			 </div>
+
+
+			</div>
+    	<div id="howto" class="col s12">Test 3</div>
+
+
+
+
+
+
 			<div class="col s12 m4 l2"><p></p></div>
  	 </div>
 
-		 <!--This is the super collapsable-->
-		 <div class="row">
-			 <div class="col s12 m4 l2"><p></p></div>
-			 <div class="col s12 m4 l8"><span class="flow-text">
-				 <ul class="collapsible" data-collapsible="accordion">
-					 <li class>
-		       	<div class="collapsible-header"><h4 class="color">The Super Historical Quest</h4></div>
-		     	 </li>
-					 <li class>
-					  <div class="collapsible-header">1. Start Quest here: <a href="http://www.theplatform.net/wp-content/uploads/2015/07/top500results.jpg" target="_blank" class="color"> Super Computer Chart</a></div>
-					 <div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Find the only supercomputer with a name that could be an action(verb).</p></div>
-				  </li>
-				  <li class>
-					 <div class="collapsible-header">2. Search the action on <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank" class="color"> Wikipedia</a></div>
-					 <div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Locate the coordinates of the event with 96 people involved.</p></div>
-				  </li>
-				  <li class>
-				   <div class="collapsible-header">3. Place the coordinates in <a href="https://www.google.com/maps/" target="_blank" class="color"> Google Maps.</a></div>
-				   <div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Find the nearby street named after a historical figure.</p></div>
-			   </li>
-				 <li class>
-				 	<div class="collapsible-header">4. Find his page on <a href="http://www.biography.com/" target="_blank" class="color"> biography.com</a></div>
-				 	<div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Scan through the headers and you are almost there! Just enter the breed of dog, and you will have completed the Quest.</p></div>
-			 	</li>
-				<li class>
-				 <div class="collapsible-header"><h5>Answer:</h5></div>
-				 <div class="collapsible-body card-panel red lighten-5" style="display: none;">
-					 <div class="row">
-    		 		<div class="input-field col s6">
-      				<input id="answer" type="text" class="validate">
-    				</div>
-  				</div>
-				</div>
-				</li>
-			 </ul>
-		 </div>
-		 <div class="col s12 m4 l2"><p></p></div>
-	 </div>
-	 <!--End of collapsable.-->
 
-	 <!--This is the travel collapsable-->
-	 <div class="row">
-		 <div class="col s12 m4 l2"><p></p></div>
-		 <div class="col s12 m4 l8"><span class="flow-text">
-			 <ul class="collapsible" data-collapsible="accordion">
-				 <li class>
-					<div class="collapsible-header"><h4 class="color">The World Travel Quest</h4></div>
-				 </li>
-				 <li class>
-					<div class="collapsible-header">1. Start Quest here: <a href="https://www.google.com/maps/place/Aquatic+Park/@37.808574,-122.409625,3a,41.4y,210.71h,92.42t/data=!3m8!1e1!3m6!1sXlc7lukJCeYAAAQqpo5Ogw!2e0!3e11!6s%2F%2Fgeo0.ggpht.com%2Fcbk%3Fpanoid%3DXlc7lukJCeYAAAQqpo5Ogw%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D100%26h%3D80%26yaw%3D316.23077%26pitch%3D0!7i7000!8i3500!4m2!3m1!1s0x0000000000000000:0xa37d0e615fe3778a!6m1!1e1" target="_blank" class="color"> Google Street View</a></div>
-				 <div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Locate the name of the bus company displayed on an informational booth.</p></div>
-				</li>
-				<li class>
-				 <div class="collapsible-header">2. Search for the company's website on <a href="https://www.google.com/" target="_blank" class="color">Google</a></div>
-				 <div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Go to the page for the city that has a flower in its country's flag. On the city's frontpage, find the location of the tour stop that is named after a British Queen.</p></div>
-				</li>
-				<li class>
-				 <div class="collapsible-header">3. Find this location on <a href="https://www.google.com/maps/" target="_blank" class="color"> Google Maps.</a></div>
-				 <div class="collapsible-body card-panel red lighten-5" style="display: none;"><p>Scroll through the photos that are pinned at this location. To finish this Quest, place the name of the coffee shop present in one of these photos into the answer box.</p></div>
-			 </li>
-			<li class>
-			 <div class="collapsible-header"><h5>Answer:</h5></div>
-			 <div class="collapsible-body card-panel red lighten-5" style="display: none;">
-				 <div class="row">
-					<div class="input-field col s6">
-						<input id="answer" type="text" class="validate">
-					</div>
-				</div>
-			</div>
-			</li>
-		 </ul>
-	 </div>
-	 <div class="col s12 m4 l2"><p></p></div>
- </div>
- <!--End of collapsable.-->
-	</body>
+ 	<!--This is the footer-->
+ 	<footer class="page-footer blue">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Did you like the Quests?</h5>
+            <p class="grey-text text-lighten-4">You can apply to create your own quests in the post quests section!</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="http://www.teacupcode.com">Created by TeaCupCode</a></li>
+            </ul>
+          </div>
+        </div>
+    	</div>
+      <div class="footer-copyright">
+        <div class="container">
+          Questavi 2015 All Rights Reserved
+          <a class="grey-text text-lighten-4 right" href="#!">Post Quests</a>
+        </div>
+      </div>
+	</footer>
+	<!--End of footer-->
+ </body>
 </html>
+
