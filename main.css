@@ -1,3 +1,25 @@
+.header{
+
+	background-color: #FFFFFF;
+	width: auto;
+	height: auto;
+	padding: 4px;
+
+}
+
+.header_text{
+
+	color: #000000;
+	font-family: inherit;
+
+}
+
+.link{
+
+	color: #ee6e73;
+
+}
+
 .login p {
 
 	text-align: center;
